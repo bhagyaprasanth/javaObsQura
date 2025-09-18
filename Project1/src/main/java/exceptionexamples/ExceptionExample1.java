@@ -1,0 +1,25 @@
+package exceptionexamples;
+
+public class ExceptionExample1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Exception checking");
+		try {
+			int a[] = new int[5];
+			//a[6]=50/0;
+			a[6]=10;
+			System.out.println(a[6]);
+		} catch (ArithmeticException ae) {
+			ae.printStackTrace();
+			//System.out.println(ae.getMessage());
+		}catch (ArrayIndexOutOfBoundsException ae) {
+			ae.printStackTrace();
+			//System.out.println(ae.getMessage());
+		}finally {
+			System.out.println("executing finally block");
+		}
+		System.out.println("rest of the code");
+	}
+
+}
