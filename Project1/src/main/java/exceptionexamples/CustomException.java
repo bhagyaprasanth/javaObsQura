@@ -18,7 +18,7 @@ public class CustomException {
 			System.out.println("Person eligible to vote");
 		} else {
 			throw new InvalidAgeException("Invalid Age");
-		}
+		} 
 	}
 
 	public static void main(String[] args) {
