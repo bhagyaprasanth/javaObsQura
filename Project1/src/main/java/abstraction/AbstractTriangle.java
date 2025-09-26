@@ -6,7 +6,7 @@ public class AbstractTriangle extends GraphicObject {
 	}
 
 	double getArea(int len, int brdth) {
-		double area=(len*brdth)/2;
+		double area = (len * brdth) / 2;
 		return area;
 	}
 
